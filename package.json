@@ -1,0 +1,23 @@
+{
+  "name": "neighborhood-map",
+  "version": "1.0.0",
+  "description": "google map ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelsamuelk/Software-engineering-assignment1.git"
+  },
+  "keywords": [
+    "google",
+    "map"
+  ],
+  "author": "Joel Samuel K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelsamuelk/Software-engineering-assignment1/issues"
+  },
+  "homepage": "https://github.com/joelsamuelk/Software-engineering-assignment1#readme",
+}
