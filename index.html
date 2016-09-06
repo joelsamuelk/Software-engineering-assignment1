@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neighborhood Map</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+    <div class="loading">
+    </div>
+
+    <div class="clearfix" style="background: #02b3e4;">
+        <input  id="loc-input" data-bind="textInput: searchText" class="controls" type="text" placeholder="Search" />
+
+        <div id="list" class="draggable">
+            <h2>Cape Town Universities and Colleges</h2>
+            <span style="font-weight: 10px; font-weight: bold;text-align: center;padding: 0.83em 20px;">drag the location list if needed!</span>
+            <ul data-bind="foreach: filterPlaces">
+                <li data-bind="click: $parent.clickMarker">
+                    <p class="name"><span data-bind="text: name"></span></p> 
+                <p class="address"><span data-bind="text: address"></span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- </div> -->
+    <div id="map-canvas"></div>
+
+
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script async src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script> x
+    <script async src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDSCcy2htnsbh9edXydftA1ESGTP-ZU2Zo&libraries=places&callback=googleSuccess" onerror="googleError()"></script>
+    
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+    
+</body>
+
+</html>
